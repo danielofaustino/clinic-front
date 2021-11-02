@@ -21,7 +21,6 @@ import {
 import { HamburgerIcon, CloseIcon, AtSignIcon } from '@chakra-ui/icons';
 import { FaInstagram, FaFacebookSquare, FaWhatsapp } from 'react-icons/fa';
 
-
 const Linkss = [
   'Procedimentos',
   'Cursos',
@@ -88,8 +87,7 @@ export default function Header() {
                 cursor={'pointer'}
                 minW={0}
               >
-                  <FaWhatsapp fontSize="35" color="green" />
-        
+                <FaWhatsapp fontSize="35" color="green" />
               </MenuButton>
               <MenuList>
                 <Link
