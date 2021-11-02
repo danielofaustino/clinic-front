@@ -1,4 +1,4 @@
-import Layout from '../components/Layout';
+import Layout from '@/components/Layout';
 import { Box, Container, Heading, Text, Stack } from '@chakra-ui/react';
 import { FaTools } from 'react-icons/fa';
 

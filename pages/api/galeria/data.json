@@ -1,0 +1,32 @@
+{
+  "galeria":[
+    {
+      "id":"1",
+      "nome":"Micropigmentação Labial",
+      "tecnica":"Allure Lips",
+      "descrição":"A Micropigmentação é um procedimento realizado com o tebori e tinta espelizada para sobrancelhas",
+      "imagem":"imagens/galeria/1.jpg"
+    },
+    {
+      "id":"2",
+      "nome":"Extensão de Cílios",
+      "tecnica":"Clássico Fio a Fio",
+      "descrição":"A Micropigmentação é um procedimento realizado com o tebori e tinta espelizada para sobrancelhas",
+      "imagem":"imagens/galeria/2.jpg"
+    },
+    {
+      "id":"3",
+      "nome":"Microbliding",
+      "tecnica":"Allure Brows",
+      "descrição":"A Micropigmentação é um procedimento realizado com o tebori e tinta espelizada para sobrancelhas",
+      "imagem":"imagens/galeria/3.jpeg"
+    },
+    {
+      "id":"4",
+      "nome":"Design de Sobrancelhas",
+      "tecnica":"Allure Lines",
+      "descrição":"A Micropigmentação é um procedimento realizado com o tebori e tinta espelizada para sobrancelhas",
+      "imagem":"imagens/galeria/4.jpeg"
+    }
+  ]
+}
