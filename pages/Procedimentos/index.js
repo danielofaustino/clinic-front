@@ -66,7 +66,7 @@ export default function index({ procedimentos }) {
   );
 }
 
-export async function getServerSideProps() {
+export async function getStaticProps() {
   let response = await api.get('/api/procedimentos');
   let procedimentos = response.data;
   return {
