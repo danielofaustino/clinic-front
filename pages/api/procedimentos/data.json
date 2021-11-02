@@ -3,25 +3,25 @@
     {
       "id":"1",
       "nome":"Micropigmentação Labial",
-      "descrição":"A Micropigmentação é um procedimento realizado com o tebori e tinta espelizada para sobrancelhas",
+      "description":"A Micropigmentação é um procedimento realizado com o tebori e tinta espelizada para sobrancelhas",
       "imagem":"imagens/procedimentos/1.jpeg"
     },
     {
       "id":"2",
       "nome":"Extensão de Cílios",
-      "descrição":"A Micropigmentação é um procedimento realizado com o tebori e tinta espelizada para sobrancelhas",
+      "description":"A Micropigmentação é um procedimento realizado com o tebori e tinta espelizada para sobrancelhas",
       "imagem":"imagens/procedimentos/2.jpeg"
     },
     {
       "id":"3",
       "nome":"Micropigmentação",
-      "descrição":"A Micropigmentação é um procedimento realizado com o tebori e tinta espelizada para sobrancelhas",
+      "description":"A Micropigmentação é um procedimento realizado com o tebori e tinta espelizada para sobrancelhas",
       "imagem":"imagens/procedimentos/3.jpeg"
     },
     {
       "id":"4",
       "nome":"Design de Sobrancelhas",
-      "descrição":"A Micropigmentação é um procedimento realizado com o tebori e tinta espelizada para sobrancelhas",
+      "description":"A Micropigmentação é um procedimento realizado com o tebori e tinta espelizada para sobrancelhas",
       "imagem":"imagens/procedimentos/4.jpeg"
     }
   ]
