@@ -20,7 +20,7 @@ import {
 } from '@chakra-ui/react';
 import { HamburgerIcon, CloseIcon, AtSignIcon } from '@chakra-ui/icons';
 import { FaInstagram, FaFacebookSquare, FaWhatsapp } from 'react-icons/fa';
-import { route } from 'next/dist/server/router';
+
 
 const Linkss = [
   'Procedimentos',
@@ -52,7 +52,7 @@ export default function Header() {
       <Box backgroundColor="#343a40" px={4}>
         <Flex h={16} alignItems={'center'} justifyContent={'space-between'}>
           <IconButton
-            size={'md'}
+            size={'sm'}
             icon={isOpen ? <CloseIcon /> : <HamburgerIcon />}
             aria-label={'Open Menu'}
             display={{ md: 'none' }}
@@ -84,12 +84,12 @@ export default function Header() {
             <Menu>
               <MenuButton
                 as={Button}
-                rounded={'full'}
-                variant={'link'}
+                variant="link"
                 cursor={'pointer'}
                 minW={0}
               >
-                <AtSignIcon w={6} h={6} color="white" />
+                  <FaWhatsapp fontSize="35" color="green" />
+        
               </MenuButton>
               <MenuList>
                 <Link
@@ -134,7 +134,7 @@ export default function Header() {
         </Flex>
 
         {isOpen ? (
-          <Box pb={4} display={{ md: 'none' }}>
+          <Box pb={4} pt={4}>
             <Stack
               color="white"
               as={'nav'}
