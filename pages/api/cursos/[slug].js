@@ -1,5 +1,5 @@
 const { cursos } = require('./data.json');
-
+/* eslint import/no-anonymous-default-export: [2, {"allowArrowFunction": true}] */
 export default (req, res) => {
   const curso = cursos.filter(
     (item) => item.nome === req.query.slug

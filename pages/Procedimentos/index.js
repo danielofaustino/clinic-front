@@ -52,24 +52,22 @@ export default function index({ procedimentos }) {
     ],
   };
 
-  console.log(procedimentos);
+ 
   return (
     <Layout>
-      
-      <Container maxW="container.xl"  >
-        
-          <Slider {...settings}>
-            {procedimentos.map((item) => (
-              <ProcedimentosItem key={item.id} item={item} />
-            ))}
-          </Slider>
-        
+      <Container maxW="container.xl">
+        <Slider {...settings}>
+          {procedimentos.map((item) => (
+            <ProcedimentosItem key={item.id} item={item} />
+          ))}
+        </Slider>
       </Container>
     </Layout>
   );
 }
 
-export async function getStaticProps() {
+export async function getServerSideProps({ params: { slug } }) {
+  console.log(`Building slug: ${slug}`);
   let response = await api.get('/api/procedimentos');
   let procedimentos = response.data;
   return {

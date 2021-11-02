@@ -1,5 +1,5 @@
 const { cursos } = require('./data.json');
-
+/* eslint import/no-anonymous-default-export: [2, {"allowArrowFunction": true}] */
 export default (req, res) => {
   if (req.method === 'GET') {
     res.status(200).json(cursos);

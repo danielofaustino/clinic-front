@@ -10,7 +10,6 @@ import {
   Stack,
   StackDivider,
   Icon,
-  useColorModeValue,
 } from '@chakra-ui/react';
 import {
   IoAnalyticsSharp,
@@ -74,7 +73,7 @@ export default function index() {
               spacing={4}
               divider={
                 <StackDivider
-                  borderColor={useColorModeValue('gray.100', 'gray.700')}
+                  borderColor={'gray.100'}
                 />
               }
             >
@@ -87,7 +86,7 @@ export default function index() {
                     h={5}
                   />
                 }
-                iconBg={useColorModeValue('yellow.100', 'yellow.900')}
+                iconBg={'yellow.100'}
                 text={'Mais de 2 mil Clientes atendidas'}
               />
               {/* <Feature
@@ -101,7 +100,7 @@ export default function index() {
                 icon={
                   <Icon as={IoSearchSharp} color={'purple.500'} w={5} h={5} />
                 }
-                iconBg={useColorModeValue('purple.100', 'purple.900')}
+                iconBg={'purple.100'}
                 text={'90% das Alunas abriram seu próprio negócio'}
               />
             </Stack>

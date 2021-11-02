@@ -60,11 +60,11 @@ export default function Header() {
           <HStack spacing={8} alignItems={'center'} color="white">
             <Box cursor={'pointer'}>
               <Links href="/">
-                <img
-                  width="95"
-                  height="40"
-                  src="https://www.fabrinemacedo.com.br/img/logobranco.png"
+                <Image
+                 width={150}
+                  src="/logobranco.png"
                   alt="Logo"
+                  
                 />
               </Links>
             </Box>

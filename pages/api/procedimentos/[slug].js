@@ -1,5 +1,5 @@
 const { procedimentos } = require('./data.json');
-
+/* eslint import/no-anonymous-default-export: [2, {"allowArrowFunction": true}] */
 export default (req, res) => {
   const procedimento = procedimentos.filter(
     (item) => item.nome === req.query.slug

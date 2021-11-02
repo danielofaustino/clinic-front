@@ -8,9 +8,7 @@ import {
   Image,
 } from '@chakra-ui/react';
 
-
-
-export default function ProcedimentosItem({item}) {
+export default function ProcedimentosItem({ item }) {
   return (
     <Center py={12} mx={2}>
       <Box
@@ -22,7 +20,8 @@ export default function ProcedimentosItem({item}) {
         boxShadow={'2xl'}
         rounded={'lg'}
         pos={'relative'}
-        zIndex={1}>
+        zIndex={1}
+      >
         <Box
           rounded={'lg'}
           mt={-12}
@@ -44,13 +43,15 @@ export default function ProcedimentosItem({item}) {
             _after: {
               filter: 'blur(20px)',
             },
-          }}>
+          }}
+        >
           <Image
             rounded={'lg'}
             height={230}
             width={282}
             objectFit={'cover'}
             src={item.imagem}
+            alt={item.name}
           />
         </Box>
         <Stack pt={10} align={'center'}>
