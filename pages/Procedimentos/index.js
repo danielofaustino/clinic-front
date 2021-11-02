@@ -66,8 +66,7 @@ export default function index({ procedimentos }) {
   );
 }
 
-export async function getServerSideProps({ params: { slug } }) {
-  console.log(`Building slug: ${slug}`);
+export async function getServerSideProps() {
   let response = await api.get('/api/procedimentos');
   let procedimentos = response.data;
   return {
