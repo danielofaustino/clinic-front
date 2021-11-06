@@ -1,6 +1,6 @@
 import Layout from '@/components/Layout';
 import ProcedimentosItem from '@/components/ProcedimentosItem';
-import { Container, Box } from '@chakra-ui/react';
+import { Container } from '@chakra-ui/react';
 import Slider from 'react-slick';
 import { api } from '@/services/api';
 
@@ -52,13 +52,12 @@ export default function index({ procedimentos }) {
     ],
   };
 
- 
   return (
     <Layout>
       <Container maxW="container.xl">
         <Slider {...settings}>
           {procedimentos.map((item) => (
-            <ProcedimentosItem key={item.id} item={item} />
+            <ProcedimentosItem key={`${item.id}-${item.nome}`} item={item} />
           ))}
         </Slider>
       </Container>
@@ -71,6 +70,5 @@ export async function getStaticProps() {
   let procedimentos = response.data;
   return {
     props: { procedimentos },
-    revalidate: 1,
   };
 }

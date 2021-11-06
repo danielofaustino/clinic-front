@@ -41,18 +41,7 @@ export default function index() {
       <Container maxW={'5xl'} py={12}>
         <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10}>
           <Stack spacing={4}>
-            {/* <Text
-              textTransform={'uppercase'}
-              color={'blue.400'}
-              fontWeight={600}
-              fontSize={'sm'}
-              bg={useColorModeValue('blue.50', 'blue.900')}
-              p={2}
-              alignSelf={'flex-start'}
-              rounded={'md'}
-            >
-              Our Story
-            </Text> */}
+         
             <Heading>Sobre nós</Heading>
             <Text color={'gray.500'} fontSize={'lg'}>
               Fabrine Macedo teve seu primeiro contato com o mundo da beleza aos
@@ -89,13 +78,7 @@ export default function index() {
                 iconBg={'yellow.100'}
                 text={'Mais de 2 mil Clientes atendidas'}
               />
-              {/* <Feature
-                icon={
-                  <Icon as={IoLogoBitcoin} color={'green.500'} w={5} h={5} />
-                }
-                iconBg={useColorModeValue('green.100', 'green.900')}
-                text={'Crescimento Constante'}
-              /> */}
+            
               <Feature
                 icon={
                   <Icon as={IoSearchSharp} color={'purple.500'} w={5} h={5} />

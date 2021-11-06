@@ -2,6 +2,7 @@ import Head from 'next/head';
 import { Flex } from '@chakra-ui/react';
 import Footer from './Footer';
 import Header from './Header';
+import { colors } from '../styles/colors';
 
 export default function Layout({ title, keywords, description, children }) {
   return (
@@ -14,7 +15,12 @@ export default function Layout({ title, keywords, description, children }) {
           <meta name="keywords" content={keywords} />
         </Head>
 
-        <Flex width="100vw" backgroundColor="#343a40" p={15} color="white">
+        <Flex
+          width="100vw"
+          backgroundColor={colors.background}
+          p={15}
+          color="#222"
+        >
           {children}
         </Flex>
       </Flex>

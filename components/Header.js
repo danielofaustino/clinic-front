@@ -1,4 +1,5 @@
 import Links from 'next/link';
+import { colors } from '../styles/colors';
 
 import {
   Box,
@@ -48,7 +49,7 @@ export default function Header() {
 
   return (
     <>
-      <Box backgroundColor="#343a40" px={4}>
+      <Box backgroundColor={colors.background} px={4}>
         <Flex h={16} alignItems={'center'} justifyContent={'space-between'}>
           <IconButton
             size={'sm'}
@@ -57,21 +58,21 @@ export default function Header() {
             display={{ md: 'none' }}
             onClick={isOpen ? onClose : onOpen}
           />
-          <HStack spacing={8} alignItems={'center'} color="white">
+          <HStack
+            spacing={8}
+            backgroundColor="#ccd1d60"
+            alignItems={'center'}
+            color="#222"
+          >
             <Box cursor={'pointer'}>
               <Links href="/">
-                <Image
-                 width={150}
-                  src="/logobranco.png"
-                  alt="Logo"
-                  
-                />
+                <Image width={150} src="/logoshein.png" alt="Logo" />
               </Links>
             </Box>
             <HStack
               as={'nav'}
               spacing={4}
-              color="white"
+              color="#222"
               display={{ base: 'none', md: 'flex' }}
             >
               {Linkss.map((link) => (
@@ -90,11 +91,7 @@ export default function Header() {
                 <FaWhatsapp fontSize="35" color="green" />
               </MenuButton>
               <MenuList>
-                <Link
-                  href="https://wa.me/5511970433870"
-                  passHref={true}
-                  target="_blank"
-                >
+                <Link href="https://wa.me/5511970433870" target="_blank">
                   <MenuItem minH="48px">
                     <Flex mr="12px">
                       <FaWhatsapp w={8} h={8} />
@@ -104,7 +101,6 @@ export default function Header() {
                 </Link>
                 <Link
                   href="https://www.facebook.com/fabrinemacedobeautyclinic"
-                  passHref={true}
                   target="_blank"
                 >
                   <MenuItem minH="48px">
@@ -116,7 +112,6 @@ export default function Header() {
                 </Link>
                 <Link
                   href="https://www.instagram.com/fabrinemacedobeautyclinic"
-                  passHref={true}
                   target="_blank"
                 >
                   <MenuItem minH="48px">
@@ -134,7 +129,7 @@ export default function Header() {
         {isOpen ? (
           <Box pb={4} pt={4}>
             <Stack
-              color="white"
+              color="#222"
               as={'nav'}
               spacing={4}
               onClick={isOpen ? onClose : onOpen}

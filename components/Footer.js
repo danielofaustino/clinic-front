@@ -1,4 +1,5 @@
 import Links from 'next/link';
+import { colors } from '../styles/colors';
 import {
   Box,
   chakra,
@@ -12,7 +13,7 @@ import {
 import { FaInstagram, FaFacebookSquare, FaWhatsapp } from 'react-icons/fa';
 
 const Logo = (props) => {
-  return <Image src="/logobranco.png" width="95" height="40" alt="logo"/>;
+  return <Image src="/logobranco.png" width="95" height="40" alt="logo" />;
 };
 
 const SocialButton = ({ children, label, href }) => {
@@ -41,13 +42,10 @@ const SocialButton = ({ children, label, href }) => {
 
 export default function Footer() {
   return (
-    <Box
-      backgroundColor="#343a40"
-      color={'gray.700'}
-    >
+    <Box backgroundColor={colors.background} color={'gray.700'}>
       <Container
         as={Stack}
-        color="white"
+        color="#222"
         maxW={'6xl'}
         py={4}
         direction={{ base: 'column', md: 'row' }}
@@ -59,7 +57,6 @@ export default function Footer() {
         <Stack direction={'row'} spacing={6}>
           <Link
             href="https://www.instagram.com/fabrinemacedobeautyclinic"
-            passHref={true}
             target="_blank"
           >
             <SocialButton label={'Instagram'}>
@@ -68,18 +65,13 @@ export default function Footer() {
           </Link>
           <Link
             href="https://www.facebook.com/fabrinemacedobeautyclinic"
-            passHref={true}
             target="_blank"
           >
             <SocialButton label={'Facebook'}>
               <FaFacebookSquare />
             </SocialButton>
           </Link>
-          <Link
-            href="https://wa.me/5511970433870"
-            passHref={true}
-            target="_blank"
-          >
+          <Link href="https://wa.me/5511970433870" target="_blank">
             <SocialButton label={'WhatsApp'}>
               <FaWhatsapp />
             </SocialButton>

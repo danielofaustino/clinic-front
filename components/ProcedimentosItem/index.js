@@ -7,8 +7,11 @@ import {
   Stack,
   Image,
 } from '@chakra-ui/react';
+import { colors } from '../../styles/colors';
+import Link from 'next/link';
 
 export default function ProcedimentosItem({ item }) {
+  console.log('carousel ==>', item);
   return (
     <Center py={12} mx={2}>
       <Box
@@ -16,7 +19,7 @@ export default function ProcedimentosItem({ item }) {
         p={6}
         maxW={'330px'}
         w={'full'}
-        bg={useColorModeValue('white', 'gray.800')}
+        bg={useColorModeValue(colors.background)}
         boxShadow={'2xl'}
         rounded={'lg'}
         pos={'relative'}
@@ -45,30 +48,22 @@ export default function ProcedimentosItem({ item }) {
             },
           }}
         >
-          <Image
-            rounded={'lg'}
-            height={230}
-            width={282}
-            objectFit={'cover'}
-            src={item.imagem}
-            alt={item.name}
-          />
+          <Link href={`/Procedimentos/${item.nome}`} passHref>
+            <Image
+              rounded={'lg'}
+              height={230}
+              width={282}
+              objectFit={'cover'}
+              src={item.imagem}
+              alt={item.nome}
+            />
+          </Link>
         </Box>
         <Stack pt={10} align={'center'}>
           <Text color={'black'} fontSize={'sm'} textTransform={'uppercase'}>
             {item.nome}
           </Text>
-          {/* <Heading color="black" fontSize={'2xl'} fontFamily={'body'} fontWeight={500}>
-            {item.description}
-          </Heading> */}
-          <Stack direction={'row'} align={'center'}>
-            {/* <Text fontWeight={800} fontSize={'xl'}>
-              $57
-            </Text>
-            <Text textDecoration={'line-through'} color={'gray.600'}>
-              $199
-            </Text> */}
-          </Stack>
+          <Stack direction={'row'} align={'center'}></Stack>
         </Stack>
       </Box>
     </Center>
