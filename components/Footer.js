@@ -53,7 +53,7 @@ export default function Footer() {
         justify={{ base: 'center', md: 'space-between' }}
         align={{ base: 'center', md: 'center' }}
       >
-        <Text>Fabrine Macedo Beauty Clinic - 2021</Text>
+        <Text>Fabrine Macedo Beauty Clinic - 2022</Text>
         <Stack direction={'row'} spacing={6}>
           <Link
             href="https://www.instagram.com/fabrinemacedobeautyclinic"
